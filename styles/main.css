@@ -9,3 +9,66 @@ html, body {
     margin: 0;
     padding: 0;
 }
+
+#header {
+    text-align: center;
+    width: 100%;
+    height: 400px;
+    margin: auto;
+    background-color: white;
+}
+
+.pp {
+    background: url("/images/pp.jpg");
+    background-size: cover;
+    border-radius: 50%;
+    box-shadow: black 0px 0px 25px 5px;
+    margin: 20px auto 30px auto;
+    width: 200px;
+    height: 200px;
+
+}
+
+.hello {
+    font-size: 4rem;
+    color: 	black;
+}
+
+.desc {
+    color:	black;
+    border-left: rgba(0, 0, 0, 0.637) 5px groove;
+    background-color: rgba(0, 255, 255, 0.171);
+    padding-left: 20px;
+}
+
+.contact {
+    text-align: center;
+}
+
+.twitter {
+    background: url("/images/svg/twitter.svg");
+}
+
+.spotify {
+    background: url("/images/svg/spotify.svg");
+}
+
+.email {
+    background: url("/images/svg/email.svg");
+}
+
+.icon-props {
+    width: 75px;
+    height: 75px;
+    top: 0;
+    transition: 250ms top linear; 
+    /*It's working ok but I need to re-arrange the animation.*/
+}
+
+.icon-props:hover {
+    position: relative;
+    top: -10px;
+}
+a {
+    text-decoration: none;
+}
