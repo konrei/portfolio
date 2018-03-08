@@ -4,7 +4,7 @@ This is the lecture 0 of the Harvard's cs50 web development course. :=)
 
  ```
    HEX         RGB
-	------      ------
+  ------      ------
  #e6f0e1	(230,240,225) Lightest green
  #d7ecd1	(215,236,209) "
  #bbdfba	(187,223,186) "
