@@ -19,7 +19,7 @@ html, body {
 }
 
 .pp {
-    background: url("./images/pp.jpg");
+    background: url("../images/pp.jpg");
     background-size: cover;
     border-radius: 50%;
     box-shadow: black 0px 0px 25px 5px;
@@ -46,15 +46,15 @@ html, body {
 }
 
 .twitter {
-    background: url("./images/svg/twitter.svg");
+    background: url("../images/svg/twitter.svg");
 }
 
 .spotify {
-    background: url("./images/svg/spotify.svg");
+    background: url("../images/svg/spotify.svg");
 }
 
 .email {
-    background: url("./images/svg/email.svg");
+    background: url("../images/svg/email.svg");
 }
 
 .icon-props {
