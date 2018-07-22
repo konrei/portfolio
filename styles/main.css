@@ -32,10 +32,6 @@ html, body {
     top: var(--space);
 }
 
-.contact {
-    text-align: center;
-}
-
 .twitter {
     background-image: url("../images/svg/twitter.svg");
 }
