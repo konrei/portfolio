@@ -1,62 +1,58 @@
-@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
-
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500');
 :root {
-    --space: 50px;
+    --tcolor: rgba(128, 44, 167, 0.541);
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
+    font-family: "Roboto", sans-serif, serif;
 }
 
-html, body {
-    font-family: "Source Code Pro", sans-serif, serif;
+html,
+body {
     margin: 0;
     padding: 0;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #header {
-    margin-bottom: 50px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 800px;
+    grid-template-rows: 200px auto 100px;
+    grid-gap: 100px;
 }
 
-.hello {
-    font-size: 5rem;
-    color:  rgba(128, 44, 167, 1);
+.hey {
+    font-size: 3rem;
+    color: silver;
+    font-weight: 400;
 }
 
 .desc {
-    color:	rgb(255, 255, 255);
-    background-color: rgba(128, 44, 167, 0.541);
+    color: white;
+    background-color: var(--tcolor);
     padding: 5px;
-    position: relative;
-    top: var(--space);
+    font-size: 2rem;
+    font-weight: 200;
 }
 
-.twitter {
-    background-image: url("../images/svg/twitter.svg");
+button {
+    background: #f72359;
+    border: none;
+    background-color: var(--tcolor);
 }
 
-.spotify {
-    background-image: url("../images/svg/spotify.svg");
-}
-
-.email {
-    background-image: url("../images/svg/email.svg");
-}
-
-.icon-props {
-    width: 75px;
-    height: 75px;
-    opacity: .2;
-    transition: opacity 0.5s ease;
-    position: relative;
-    top: var(--space);
-}
-
-.icon-props:hover {
-    opacity: 1;
+button>span {
+    font-size: 2rem;
+    font-weight: 300;
+    color: white;
 }
 
 a {
     text-decoration: none;
-}   
+}
