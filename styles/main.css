@@ -1,58 +1,89 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500');
+@font-face {
+    font-family: 'Rainy Hearts';
+    src: url('../fonts/rainyhearts.ttf') format('truetype');
+}
+
 :root {
-    --tcolor: rgba(128, 44, 167, 0.541);
+    --myblack: #333;
+    --bgcolor: white;
 }
 
 *,
 *::before,
 *::after {
     box-sizing: border-box;
-    font-family: "Roboto", sans-serif, serif;
+}
+
+a {
+    text-decoration: none;
 }
 
 html,
 body {
     margin: 0;
     padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    font-family: "Rainy Hearts", sans-serif, serif;
 }
 
-#header {
-    text-align: center;
-    display: grid;
-    grid-template-columns: 800px;
-    grid-template-rows: 200px auto 100px;
-    grid-gap: 100px;
+header {
+    max-width: 800px;
+    height: 100px;
+    margin: 0 auto;
+    border-bottom: 2px dashed var(--myblack);
 }
 
-.hey {
-    font-size: 3rem;
-    color: silver;
-    font-weight: 400;
+nav>ul {
+    float: right;
 }
 
-.desc {
-    color: white;
-    background-color: var(--tcolor);
-    padding: 5px;
-    font-size: 2rem;
-    font-weight: 200;
-}
-
-button {
-    background: #f72359;
-    border: none;
-    background-color: var(--tcolor);
-}
-
-button>span {
-    font-size: 2rem;
-    font-weight: 300;
-    color: white;
-}
-
-a {
+nav>ul>a {
+    display: inline-block;
     text-decoration: none;
+    list-style-type: none;
+    margin: 10px;
+    font-size: 30px;
+}
+
+ul>a:hover {
+    background-color: var(--myblack);
+    color: var(--bgcolor);
+    cursor: pointer;
+}
+
+article {
+    max-width: 800px;
+    height: 500px;
+    margin: 30px auto;
+    font-size: 25px;
+    text-align: center;
+}
+
+.projects {
+    font-size: 50px;
+    color: darkgoldenrod;
+}
+
+.contact {
+    font-size: 30px;
+    margin-top: 50px;
+}
+
+.twitter {
+    color: #00ACEE;
+}
+
+.mail {
+    color: #D7564A;
+}
+
+footer {
+    max-width: 800px;
+    height: 200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.copy {
+    color: gray;
+    font-size: 15px;
 }
